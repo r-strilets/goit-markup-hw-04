@@ -303,7 +303,50 @@ img{
     font-size: 16px;
     line-height: 1.19;
     color: var(--secondary-text-color);
+
+    margin-bottom: 16px;
 }
+
+.team-member-social-list{
+    display: flex;
+    justify-content: center;
+
+    list-style: none;
+}
+
+.social-network{
+    width: 44px;
+    height: 44px;
+
+    border-radius: 50%;
+    
+}
+
+.social-network:not(:first-child){
+    margin-left: 10px;
+
+}
+.social-network-link{
+    display: inline-flex;
+    padding: 12px;
+    border-radius: inherit;
+}
+
+.icon-social-network{
+    width: 20px;
+    height: 20px;
+    fill: #AFB1B8;
+}
+
+.social-network:hover,
+.social-network:focus{
+    background-color: var(--accent-color);
+}
+.social-network:hover .icon-social-network,
+.social-network:focus .icon-social-network{
+    fill: var(--white-color);
+}
+
 /*************** regular-customers *******************/
 .our-customers{
     display: flex;
@@ -433,6 +476,10 @@ img{
     padding-top: 60px;
     padding-bottom: 60px;
 }
+.footer-content{
+    display: flex;
+    list-style: none;
+}
 
 .footer .logo,
 .footer .link {
@@ -467,4 +514,54 @@ img{
 .footer-contacts-item .footer-phone:hover,
 .footer-contacts-item .footer-phone:focus{
     color: var(--accent-color);
+}
+
+.footer-social{
+    margin-left: 70px;
+}
+
+.footer-social-title{
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    margin-bottom: 20px;
+
+    padding-top: 12px;
+}
+
+.footer-social-list{
+    display: flex;
+    list-style: none;
+}
+
+
+.footer-social-network{
+    width: 44px;
+    height: 44px;
+
+    border-radius: 50%;
+
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social-network:hover,
+.footer-social-network:focus{
+    background-color: var(--accent-color);
+}
+
+.footer-social-network:not(:first-child){
+    margin-left: 10px;
+}
+
+.footer-social-link{
+    display: inline-flex;
+    padding: 12px;
+    border-radius: inherit;
+}
+.icon-footer-social-newtork{
+    width: 20px;
+    height: 20px;
+    fill: var(--white-color);
 }
