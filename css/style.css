@@ -129,6 +129,7 @@ img{
         url(../images/effective-solutions.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    max-width: 1600px;
 
     text-align: center;
 
